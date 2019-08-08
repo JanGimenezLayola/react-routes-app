@@ -5,7 +5,8 @@ function Private() {
   const isLoggedIn = false;
   return (
     <div>
-      {isLoggedIn ? <h1>Private page</h1> : <Redirect to='/'/>}
+      <h1>Private page</h1> 
+      {isLoggedIn || <Redirect to='/'/>}
     </div>
   )
 }
