@@ -1,18 +1,18 @@
 import React from 'react'
-import {Link} from 'react-router-dom'
+import {NavLink} from 'react-router-dom'
 
 function Nav() {
   return (
     <div>
       <ul>
         <li>
-          <Link to="/">Home</Link>
+          <NavLink exact to="/" activeClassName='active-link'>Home</NavLink>
         </li>
         <li>
-          <Link to="/about">About</Link>
+          <NavLink to="/about" activeClassName='active-link'>About</NavLink>
         </li>
         <li>
-          <Link to="/private">Private</Link>
+          <NavLink to="/private" activeClassName='active-link'>Private</NavLink>
         </li>
       </ul>
     </div>
