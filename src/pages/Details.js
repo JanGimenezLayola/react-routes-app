@@ -1,7 +1,7 @@
 import React from 'react'
 
 function Details(props) {
-  console.log(props.match.params.id)
+  console.log(props)
   return (
     <div>
       <h1>Details page</h1>
